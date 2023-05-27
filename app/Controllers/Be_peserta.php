@@ -9,6 +9,14 @@ class Be_peserta extends BaseController
 {
     public function index()
     {
+        $session = session();
+        $role = $session->get('role');
+
+        echo "<pre>";
+        var_dump($role);
+        echo "</pre>";
+        die();
+ /*
         $Msiswa = new Msiswa();
         $data = $Msiswa->findAll();
         return view(
@@ -17,5 +25,6 @@ class Be_peserta extends BaseController
                 'data' => $data,
             )
         );
+        */
     }
 }

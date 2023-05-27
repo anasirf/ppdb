@@ -1,30 +1,17 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.79.0">
-    <title>Sticky Footer Template · Bootstrap v5.0</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/">
-
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>PPDB SMAN 8 Yogyakarta</title>
 
 
     <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
-    <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#7952b3">
-
+    <link href="<?= base_url('/assets/dist/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -44,56 +31,40 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="https://getbootstrap.com/docs/5.0/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
+    <link href="<?= base_url('signin.css') ?>" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="text-center">
 
-    <!-- Begin page content -->
-    <main class="flex-shrink-0">
-        <div class="container">
-            <h1 class="mt-5">Register Form</h1>
-            Silahkan Daftarkan Identitas Anda
-            <hr />
-            <?php if (!empty(session()->getFlashdata('error'))) : ?>
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                    <h4>Periksa Entrian Form</h4>
-                    </hr />
-                    <?php echo session()->getFlashdata('error'); ?>
-                </div>
-            <?php endif; ?>
-            <form method="post" action="<?= base_url(); ?>/register/process">
-                <?= csrf_field(); ?>
-                <div class="mb-3">
-                    <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" name="username">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password">
-                </div>
-                <div class="mb-3">
-                    <label for="password_conf" class="form-label">Confirm Password</label>
-                    <input type="password" class="form-control" id="password_conf" name="password_conf">
-                </div>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </div>
-            </form>
-            <hr />
+    <main class="form-signin">
+        <form action="<?= site_url('/auth/register') ?>" method="POST">
+            <img class="mb-4" src="/assets/brand/sma-8-yogyakarta.png" alt="" width="272" height="auto">
+            <h1 class="h3 mb-3 fw-normal">Daftar</h1>
 
-        </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="no_ppdb" name="no_ppdb" placeholder="No PPDB">
+                <label for="floatingPassword">No PPDB</label>
+            </div>
+            <hr>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Re-password">
+                <label for="floatingPassword">Re-password</label>
+            </div>
+
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
+            <!--<a href="<?= base_url('login/register') ?>" class="succes btn" type="submit">Register</a>-->
+            <p class="mt-5 mb-3 text-muted">Silahkan cek email setelah selesai klik register</p>
+            <p class="mt-5 mb-3 text-muted">&copy; 2023</p>
+        </form>
     </main>
-
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-    </footer>
 
 
 

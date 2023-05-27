@@ -7,7 +7,13 @@
     <form>
         <div class="mb-3">
             <label for="name" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" id="name">
+            <!-- 
+                id = disamakan dengan field di database 
+                name = disamakan dengan field di database 
+                jika id = "nama" maka name = "nama" 
+                karena name akan digunakan untuk variabel POST
+            -->
+            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Peserta Didik">
             <div id="nameHelp" class="form-text">Nama Peserta Didik sesuai dokumen resmi yang berlaku akte atau ijazah</div>
         </div>
         <div class="mb-3">
@@ -163,11 +169,11 @@
             <input type="text" class="form-control" id="bahasa">
             <div id="bahasaHelp" class="form-text">Bahasa yang digunakan sehari hari oleh peserta didik</div>
         </div>
-        
+
         <br>
 
         <!--ini form-->
-        
+
         <br>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

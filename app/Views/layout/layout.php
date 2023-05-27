@@ -1,3 +1,8 @@
+<?php
+$session = session();
+$role = $session->get('role');
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -44,57 +49,16 @@
                 Dashboard
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_biodata") ?>">
-                <span data-feather="user" class="align-text-bottom"></span>
-                Biodata
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_ayah") ?>">
-                <span data-feather="user" class="align-text-bottom"></span>
-                Data Ayah
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_ibu") ?>">
-                <span data-feather="user" class="align-text-bottom"></span>
-                Data Ibu
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_wali") ?>">
-                <span data-feather="user" class="align-text-bottom"></span>
-                Data Wali
-              </a>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_saudara") ?>">
-                <span data-feather="user" class="align-text-bottom"></span>
-                Data Saudara
-              </a>
-            </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_prestasi") ?>">
-                <span data-feather="award" class="align-text-bottom"></span>
-                Prestasi
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?= base_url("/be_data_pendukung") ?>">
-                <span data-feather="award" class="align-text-bottom"></span>
-                Data Pendukung
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="<?= base_url("/be_peserta") ?>">
-                <span data-feather="user" class="align-text-bottom"></span>
-                Peserta
-              </a>
-            </li>
+
+            <?php
+            if ($role == 1) : //role 1 = admin
+              echo $this->include('layout/menu_admin');
+            else : //role 2 = siswa
+              echo $this->include('layout/menu_siswa');
+            endif
+            ?>
+
           </ul>
-
-
         </div>
       </nav>
 

@@ -57,4 +57,12 @@ class auth extends BasefoController
 
         return redirect()->to(base_url('/'));
     }
+    
+    public function register(){
+        $email = $this->request->getVar('email');
+        $no_ppdb = $this->request->getVar('no_ppdb');
+        $password = $this->request->getVar('password');
+        $repassword = $this->request->getVar('repassword');
+        print_r($email);
+    }
 }
