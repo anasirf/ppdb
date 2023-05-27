@@ -17,9 +17,14 @@
             <div id="nameHelp" class="form-text">Nama Peserta Didik sesuai dokumen resmi yang berlaku akte atau ijazah</div>
         </div>
         <div class="mb-3">
+            <label for="nisn" class="form-label">NISN</label>
+            <input type="text" class="form-control" id="nisn" name="nisn" placeholder="Nomor Induk Siswa Nasional">
+        </div>
+        <div class="mb-3">
             <label for="jk" class="form-label">Jenis Kelamin</label>
             <br>
             <div class="form-check form-check-inline">
+                <!--name untuk jenis kelamin apakah jk? -->
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="laki-laki" value="jk_laki">
                 <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
             </div>
@@ -28,22 +33,19 @@
                 <label class="form-check-label" for="inlineRadio2">Perempuan</label>
             </div>
         </div>
-        <div class="mb-3">
-            <label for="nisn" class="form-label">NISN</label>
-            <input type="text" class="form-control" id="nisn">
-        </div>
+
         <div class="mb-3">
             <label for="nik" class="form-label">NIK/No. KITAS (Untuk WNA)</label>
-            <input type="text" class="form-control" id="nik" aria-describedby="nikHelp">
+            <input type="text" class="form-control" id="nik" name="nik" aria-describedby="nikHelp" placeholder="Nomor Induk Kependudukan">
             <div id="nikHelp" class="form-text">Nomor Induk Kependudukan yang tercantum pada KK / KTP /KIA bagi WNA diisi menggunakan nomor Kartu Izin Tinggal Terbatas (KITAS).</div>
         </div>
         <div class="mb-3">
             <label for="nokk" class="form-label">No. KK</label>
-            <input type="text" class="form-control" id="nokk">
+            <input type="text" class="form-control" id="nokk" name="nokk>
         </div>
-        <div class="mb-3">
+        <div class=" mb-3">
             <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-            <input type="text" class="form-control" id="tempat_lahir">
+            <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Yogyakarta">
             <div id="tempat_lahirHelp" class="form-text">Tempat Lahir Peserta Didik sesuai dokumen resmi yang berlaku akte atau ijazah</div>
         </div>
         <div class="mb-3">
@@ -52,10 +54,11 @@
         </div>
         <div class="mb-3">
             <label for="no_akta" class="form-label">No Registerasi Akta</label>
-            <input type="text" class="form-control" id="no_akta">
+            <input type="text" class="form-control" id="no_akta" name="no_akta" placeholder="2075/K/2004">
             <div id="no_aktaHelp" class="form-text">Nomor Registerasi Akta kelahiran. Nomor yang dimaksud umumnya terletak pada bagian tengah atas lembar kutipan akta kelahiran</div>
         </div>
         <div class="mb-3">
+            <!-- name untuk agama? -->
             <label for="agama" class="form-label">Agama</label>
             <select class="form-select" aria-label="Default select example">
                 <option></option>
@@ -68,42 +71,44 @@
                 <option value="7">Kepercayaan Kepada Tuhan YME</option>
             </select>
         </div>
+        <!-- jika dijadikan radio button ya dan tidak bisakah? -->
         <div class="mb-3">
             <label for="kebutuhan_khusus" class="form-label">Berkebutuhan Khusus</label>
-            <input type="text" class="form-control" id="kebutuhan_khusus">
+            <input type="text" class="form-control" id="k_khusus" name="k_khusus">
             <div id="kebutuhan_khususHelp" class="form-text">Jika tidak memiliki kebutuhan khusus bisa diisi tidak atau -</div>
         </div>
         <div class="mb-3">
             <label for="alamat" class="form-label">Alamat Tempat Tinggal</label>
-            <input type="text" class="form-control" id="alamat">
+            <input type="text" class="form-control" id="alamat_tinggal" name="alamat_tinggal" placeholder="Jl. Semangka No. XXIV">
             <div id="alamatHelp" class="form-text">Alamat tinggal peserta didik diisi secara lengkap.</div>
         </div>
         <div class="row">
             <div class="col-3">
                 <label for="rt" class="form-label">RT </label>
-                <input type="text" class="form-control" id="rt">
+                <input type="text" class="form-control" id="rt" name="rt" placeholder="05">
             </div>
             <div class="col-3">
                 <label for="rw" class="form-label">RW </label>
-                <input type="text" class="form-control" id="rw">
+                <input type="text" class="form-control" id="rw" name=""rw" placeholder="10">
             </div>
         </div>
         <div class="mb-3">
             <label for="dusun" class="form-label">Dusun </label>
-            <input type="text" class="form-control" id="dusun">
+            <input type="text" class="form-control" id="dusun" name="dusun" placeholder="Dusun Kuningan">
         </div>
         <div class="mb-3">
             <label for="kelurahan" class="form-label">Kelurahan </label>
-            <input type="text" class="form-control" id="kelurahan">
+            <input type="text" class="form-control" id="kelurahan" name="kelurahan" placeholder="Kelurahan Sidobali">
         </div>
         <div class="mb-3">
             <label for="kecamatan" class="form-label">Kecamatan </label>
-            <input type="text" class="form-control" id="kecamatan">
+            <input type="text" class="form-control" id="kecamatan" name="kecamatan" placeholder="Kecamatan Umbulharjo">
         </div>
         <div class="mb-3">
             <label for="kd_pos" class="form-label">Kode Pos </label>
-            <input type="text" class="form-control" id="kd_pos">
+            <input type="text" class="form-control" id="kd_pos" name="kd_pos" placeholder="516517">
         </div>
+        <!--tempat tinggal sama dengan agama menggunakan enum idnya bagaimana? -->
         <div class="mb-3">
             <label for="t_tinggal" class="form-label">Tempat Tinggal</label>
             <select class="form-select" aria-label="Default select example">
@@ -119,14 +124,15 @@
         </div>
         <div class="mb-3">
             <label for="m_transportasi" class="form-label">Moda Transportasi </label>
-            <input type="text" class="form-control" id="m_transportasi">
+            <input type="text" class="form-control" id="m_transportasi" name="m_transportasi" placeholder="Sepeda Motor/Bus/Mobil Pribadi">
             <div id="m_transportasiHelp" class="form-text">Jenis transportasi utama atau yang paling sering digunakan peserta didik untuk berangkat ke sekolah contoh sepeda motor.</div>
         </div>
         <div class="mb-3">
             <label for="anak_ke" class="form-label">Anak keberapa</label>
-            <input type="text" class="form-control" id="anak_ke">
+            <input type="text" class="form-control" id="anak_ke" name="anak_ke" placeholder="1 atau 2 atau 3">
             <div id="anak_keHelp" class="form-text">Anak keberapa mengacu pada dokumen di KK.</div>
         </div>
+        <!--radio button lagi disamakan dengan kebutuhan khusus -->
         <div class="mb-3">
             <label for="jk" class="form-label">Apakah punya KIP</label>
             <br>
@@ -154,11 +160,13 @@
             <input type="text" class="form-control" id="lk">
             <div id="lkHelp" class="form-text">Lingkar Kepala Peserta didik</div>
         </div>
+        <!-- jarak rumah dijadikan radio button bisakah? jika kurang dari 1km dan lebih dari 1km -->
         <div class="mb-3">
             <label for="jarak" class="form-label">Jarak Rumah</label>
             <input type="text" class="form-control" id="jarak">
             <div id="jarakHelp" class="form-text">Jarak Tempat Tinggal Peserta didik ke sekolah</div>
         </div>
+        <!-- hobi atau kegemaran jika dibuat 3 kolom kebawah bagaimana databasenya? -->
         <div class="mb-3">
             <label for="hobi" class="form-label">Hobi atau Kegemaran</label>
             <input type="text" class="form-control" id="hobi">
@@ -166,7 +174,7 @@
         </div>
         <div class="mb-3">
             <label for="bahasa" class="form-label">Bahasa</label>
-            <input type="text" class="form-control" id="bahasa">
+            <input type="text" class="form-control" id="bahasa" name="bahasa" placeholder="Jawa/Sunda">
             <div id="bahasaHelp" class="form-text">Bahasa yang digunakan sehari hari oleh peserta didik</div>
         </div>
 

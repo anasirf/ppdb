@@ -51,9 +51,9 @@ $role = $session->get('role');
             </li>
 
             <?php
-            if ($role == 1) : //role 1 = admin
+            if ($role == 1): //role 1 = admin
               echo $this->include('layout/menu_admin');
-            else : //role 2 = siswa
+            else: //role 2 = siswa
               echo $this->include('layout/menu_siswa');
             endif
             ?>
