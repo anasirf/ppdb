@@ -89,7 +89,7 @@
             </div>
             <div class="col-3">
                 <label for="rw" class="form-label">RW </label>
-                <input type="text" class="form-control" id="rw" name=""rw" placeholder="10">
+                <input type="text" class="form-control" id="rw" name="rw" placeholder="10">
             </div>
         </div>
         <div class="mb-3">
@@ -145,6 +145,7 @@
                 <label class="form-check-label" for="inlineRadio2">Tidak</label>
             </div>
         </div>
+        <!--
         <div class="mb-3">
             <label for="tb" class="form-label">Tinggi Badan</label>
             <input type="text" class="form-control" id="tb">
@@ -159,6 +160,20 @@
             <label for="lk" class="form-label">Lingkar Kepala</label>
             <input type="text" class="form-control" id="lk">
             <div id="lkHelp" class="form-text">Lingkar Kepala Peserta didik</div>
+        </div> -->
+        <div class="row">
+            <div class="col-3">
+                <label for="tb" class="form-label">Tinggi Badan </label>
+                <input type="text" class="form-control" id="tb" name="tb" placeholder="145">
+            </div>
+            <div class="col-3">
+                <label for="bb" class="form-label">Berat Badan </label>
+                <input type="text" class="form-control" id="rw" name="bb" placeholder="65">
+            </div>
+            <div class="col-3">
+                <label for="lk" class="form-label">Lingkar Kepala </label>
+                <input type="text" class="form-control" id="lk" name="lk" placeholder="35">
+            </div>
         </div>
         <!-- jarak rumah dijadikan radio button bisakah? jika kurang dari 1km dan lebih dari 1km -->
         <div class="mb-3">
