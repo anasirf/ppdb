@@ -51,6 +51,15 @@
                 <?php } ?>
             </div>
             <div class="form-floating">
+                <input type="text" class="form-control" id="username" name="username" placeholder="username">
+                <label for="floatingInput">Username</label>
+                <?php if ($validation->getError('email')) { ?>
+                    <div class='alert alert-danger mt-2'>
+                        <?= $error = $validation->getError('username'); ?>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="form-floating">
                 <input type="text" class="form-control" id="no_ppdb" name="no_ppdb" placeholder="No PPDB">
                 <label for="floatingPassword">No PPDB</label>
                 <?php if ($validation->getError('no_ppdb')) { ?>

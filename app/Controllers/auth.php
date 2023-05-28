@@ -97,6 +97,8 @@ class auth extends BasefoController
             //insert table siswa
             $data = [
                 'no_ppdb'       => $no_ppdb,
+                'nisn'       => 'ini coba',
+                'no_ppdb'       => $no_ppdb,
                 // 'username' => 'darth',
                 // 'email'    => 'd.vader@theempire.com',
             ];
