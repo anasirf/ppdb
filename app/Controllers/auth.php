@@ -30,6 +30,8 @@ class auth extends BasefoController
             // if (password_verify($password, $dataUser->password)) {
 
             session()->set([
+                'id' => $dataUser['id'],
+                'id_siswa' => $dataUser['id_siswa'],
                 'email' => $dataUser['email'],
                 'nama' => $dataUser['nama'],
                 'role' => $dataUser['role'],

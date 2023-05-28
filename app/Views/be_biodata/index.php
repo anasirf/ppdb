@@ -13,12 +13,12 @@
                 jika id = "nama" maka name = "nama" 
                 karena name akan digunakan untuk variabel POST
             -->
-            <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama Peserta Didik">
+            <input type="text" class="form-control" id="nama" name="nama" value="<?=@$siswa['nama']?>" placeholder="Nama Peserta Didik">
             <div id="nameHelp" class="form-text">Nama Peserta Didik sesuai dokumen resmi yang berlaku akte atau ijazah</div>
         </div>
         <div class="mb-3">
             <label for="nisn" class="form-label">NISN</label>
-            <input type="text" class="form-control" id="nisn" name="nisn" placeholder="Nomor Induk Siswa Nasional">
+            <input type="text" class="form-control" id="nisn" name="nisn"  value="<?=@$siswa['nama']?>" placeholder="Nomor Induk Siswa Nasional">
         </div>
         <div class="mb-3">
             <label for="jk" class="form-label">Jenis Kelamin</label>
@@ -41,7 +41,7 @@
         </div>
         <div class="mb-3">
             <label for="nokk" class="form-label">No. KK</label>
-            <input type="text" class="form-control" id="nokk" name="nokk>
+            <input type="text" class="form-control" id="nokk" name="nokk" value="<?=@$siswa['nokk']?>" placeholder="98921389138">
         </div>
         <div class=" mb-3">
             <label for="tempat_lahir" class="form-label">Tempat Lahir</label>

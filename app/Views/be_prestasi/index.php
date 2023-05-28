@@ -5,43 +5,129 @@
 </div>
 <!--ini form-->
 <div class="container">
-   <!-- <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" id="name">
-            <div id="nameHelp" class="form-text">Nama Peserta Didik sesuai dokumen resmi yang berlaku akte atau ijazah</div>
+    <form>
+        <div class="row">
+            <div class="col-6">
+                <label for="tb" class="form-label">Nama Prestasi </label>
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                <label for="bb" class="form-label">Jenjang Prestasi </label>
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                <label for="lk" class="form-label">Prestasi Tingkat </label>
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="laki-laki" id="jk-laki">
-            <label class="form-check-label" for="jk-laki">
-                Laki-laki
-            </label>
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="perempuan" id="jk-perempuan">
-            <label class="form-check-label" for="jk-perempuan">
-                Perempuan
-            </label>
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="name" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="name">
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
-        <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
         </div>
+        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-6">
+
+                <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
+            </div>
+            <div class="col-2">
+                
+                <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
+            </div>
+            <div class="col-4">
+                
+                <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
+            </div>
+        </div>
+        <br>
         <button type="submit" class="btn btn-primary">Submit</button>
-    </form>-->
+    </form>
 </div>
 <!--ini form-->
 <?= $this->endSection() ?>
