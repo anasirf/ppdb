@@ -35,21 +35,49 @@
 </head>
 
 <body class="text-center">
-
+    <?php $validation = \Config\Services::validation(); ?>
     <main class="form-signin">
-        <form action="<?= site_url('/auth/register') ?>" method="POST">
+        <form action="<?= site_url('/auth/register_store') ?>" method="POST">
             <img class="mb-4" src="/assets/brand/sma-8-yogyakarta.png" alt="" width="272" height="auto">
             <h1 class="h3 mb-3 fw-normal">Daftar</h1>
 
             <div class="form-floating">
                 <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
+                <label for="floatingInput">Alamat Email</label>
+                <?php if ($validation->getError('email')) { ?>
+                    <div class='alert alert-danger mt-2'>
+                        <?= $error = $validation->getError('email'); ?>
+                    </div>
+                <?php } ?>
             </div>
             <div class="form-floating">
                 <input type="text" class="form-control" id="no_ppdb" name="no_ppdb" placeholder="No PPDB">
                 <label for="floatingPassword">No PPDB</label>
+                <?php if ($validation->getError('no_ppdb')) { ?>
+                    <div class='alert alert-danger mt-2'>
+                        <?= $error = $validation->getError('no_ppdb'); ?>
+                    </div>
+                <?php } ?>
             </div>
-            <hr>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="password" name="password" placeholder="password">
+                <label for="floatingPassword">Password</label>
+                <?php if ($validation->getError('password')) { ?>
+                    <div class='alert alert-danger mt-2'>
+                        <?= $error = $validation->getError('password'); ?>
+                    </div>
+                <?php } ?>
+            </div>
+            <div class="form-floating">
+                <input type="text" class="form-control" id="repassword" name="repassword" placeholder="password">
+                <label for="floatingPassword">Password</label>
+                <?php if ($validation->getError('repassword')) { ?>
+                    <div class='alert alert-danger mt-2'>
+                        <?= $error = $validation->getError('repassword'); ?>
+                    </div>
+                <?php } ?>
+            </div>
+            <!--<hr>
             <div class="form-floating">
                 <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                 <label for="floatingPassword">Password</label>
@@ -58,7 +86,7 @@
                 <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Re-password">
                 <label for="floatingPassword">Re-password</label>
             </div>
-
+                -->
             <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
             <!--<a href="<?= base_url('login/register') ?>" class="succes btn" type="submit">Register</a>-->
             <p class="mt-5 mb-3 text-muted">Silahkan cek email setelah selesai klik register</p>
