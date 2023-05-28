@@ -18,8 +18,8 @@ class Be_ibu extends BaseController
         $ibu = $Mibu->find($id_siswa); //disesuaikan dengan nama tabel 
         $data = [
             'siswa' => $siswa,
-            'ibu' => $ibu,
+            'ibu' => $ibu, //ini diganti sesuai tabelnya
         ];
-        return view('be_ibu/index');
+        return view('be_ibu/index',$data); //jangan lupa diparsing kedepan menggunakan ,$data
     }
 }

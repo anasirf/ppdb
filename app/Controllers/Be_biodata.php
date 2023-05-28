@@ -20,4 +20,52 @@ class Be_biodata extends BaseController
 
         return view('be_biodata/index', $data);
     }
+
+    public function store()
+    {
+        $Msiswa = new Msiswa();
+
+        $id = $this->request->getVar('id');
+        $nama = $this->request->getVar('nama');
+
+
+
+        // $rules = [
+        //     'email' => 'required|valid_email',
+        //     'no_ppdb' => 'required|',
+        //     'password' => 'required|min_length[6]',
+        //     'repassword' => 'required|min_length[6]|matches[password]'
+        // ];
+
+        
+
+        // if ($this->validate($rules)) { //jika inputan sesuai dengan validasi
+            // controller code
+
+            $Msiswa->transStart();
+            //insert table siswa
+            $data = [
+                'id' => $id,
+                'nama'    => $nama,
+            ];
+            $Msiswa->save($data); //esekusi database
+
+
+
+            $Msiswa->transComplete();
+
+
+            if ($Msiswa->transStatus() === FALSE) {
+                return redirect()->to('/be_biodata');
+            }
+
+            return redirect()->to('/be_biodata');
+            // return redirect()->to('/auth/login'); //ini jika minta langsung ke login
+        // } else {
+        //     // $data['validation'] = $this->validator;
+        //     return redirect()->to('/be_biodata');
+
+        // }
+    }
+
 }

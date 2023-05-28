@@ -4,7 +4,8 @@
     <h1 class="h2">Biodata</h1>
 </div>
 <div class="container">
-    <form>
+    <form action="<?= site_url('/be_biodata/store') ?>" method="POST">
+    <input type="hidden" class="form-control" id="id" name="id" value="<?=@$siswa['id']?>">
         <div class="mb-3">
             <label for="name" class="form-label">Nama Lengkap</label>
             <!-- 
