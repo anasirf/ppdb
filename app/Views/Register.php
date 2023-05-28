@@ -69,7 +69,7 @@
                 <?php } ?>
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control" id="password" name="password" placeholder="password">
+                <input type="password" class="form-control" id="password" name="password" placeholder="password">
                 <label for="floatingPassword">Password</label>
                 <?php if ($validation->getError('password')) { ?>
                     <div class='alert alert-danger mt-2'>
@@ -78,7 +78,7 @@
                 <?php } ?>
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control" id="repassword" name="repassword" placeholder="password">
+                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="password">
                 <label for="floatingPassword">Password</label>
                 <?php if ($validation->getError('repassword')) { ?>
                     <div class='alert alert-danger mt-2'>
@@ -86,16 +86,7 @@
                     </div>
                 <?php } ?>
             </div>
-            <!--<hr>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="repassword" name="repassword" placeholder="Re-password">
-                <label for="floatingPassword">Re-password</label>
-            </div>
-                -->
+            
             <button class="w-100 btn btn-lg btn-primary" type="submit">Register</button>
             <!--<a href="<?= base_url('login/register') ?>" class="succes btn" type="submit">Register</a>-->
             <p class="mt-5 mb-3 text-muted">Silahkan cek email setelah selesai klik register</p>
