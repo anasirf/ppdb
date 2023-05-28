@@ -21,6 +21,8 @@ $role = $session->get('role');
   <!-- Custom styles for this template -->
   <link href="/assets/css/dashboard.css" rel="stylesheet">
   <link href="/assets/css/main.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -77,6 +79,10 @@ $role = $session->get('role');
   <script src="/assets/js/dashboard.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+  <?= $this->renderSection('js') ?>
+
   <script>
     $(document).ready(function() {
       $('#example').DataTable();

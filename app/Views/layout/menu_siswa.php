@@ -28,3 +28,9 @@
         Data Pendukung
     </a>
 </li>
+<li class="nav-item">
+    <a class="nav-link" href="<?= base_url("/be_PRESTASI") ?>">
+        <span data-feather="award" class="align-text-bottom"></span>
+        Prestasi
+    </a>
+</li>

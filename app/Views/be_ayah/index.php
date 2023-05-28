@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3">
             <label for="nik" class="form-label">NIK/No. KITAS (Untuk WNA)</label>
-            <input type="text" class="form-control" id="nik" name="nik" aria-describedby="nikHelp">
+            <input type="text" class="form-control" id="nik" name="nik" aria-describedby="nikHelp" placeholder="33xxxxx">
             <div id="nikHelp" class="form-text">Nomor Induk Kependudukan yang tercantum pada KK / KTP bagi WNA diisi menggunakan nomor Kartu Izin Tinggal Terbatas (KITAS).</div>
         </div>
         <div class="mb-3">

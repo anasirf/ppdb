@@ -62,9 +62,9 @@
             <label for="agama" class="form-label">Agama</label>
             <select class="form-select" aria-label="Default select example">
                 <option></option>
-                <option value="1">Islam</option>
-                <option value="2">Kristen Protestan</option>
-                <option value="3">Katholik</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katholik">Katholik</option>
                 <option value="4">Hindu</option>
                 <option value="5">Budha</option>
                 <option value="6">Konghuchu</option>
@@ -108,12 +108,12 @@
             <label for="kd_pos" class="form-label">Kode Pos </label>
             <input type="text" class="form-control" id="kd_pos" name="kd_pos" placeholder="516517">
         </div>
-        <!--tempat tinggal sama dengan agama menggunakan enum idnya bagaimana? -->
+        <!--tempat tinggal sama dengan agama menggunakan varchar option value disamakan dengan option name -->
         <div class="mb-3">
             <label for="t_tinggal" class="form-label">Tempat Tinggal</label>
             <select class="form-select" aria-label="Default select example">
                 <option></option>
-                <option value="1">Bersama Orang Tua</option>
+                <option value="Bersama Orang Tua">Bersama Orang Tua</option>
                 <option value="2">Bersama Wali</option>
                 <option value="3">Kos</option>
                 <option value="4">Asrama</option>
@@ -143,6 +143,11 @@
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tidak_ada_kip" value="tidak_ada_kip">
                 <label class="form-check-label" for="inlineRadio2">Tidak</label>
+            </div>
+            <div class="mb-3">
+                <label for="anak_ke" class="form-label">No KIP</label>
+                <input type="text" class="form-control" id="nokip" name="nokip" placeholder="37XOPDF">
+                <div id="anak_keHelp" class="form-text">Nomor yang tertera pada Kartu Indonesia Pintar.</div>
             </div>
         </div>
         <!--
@@ -184,7 +189,15 @@
         <!-- hobi atau kegemaran jika dibuat 3 kolom kebawah bagaimana databasenya? -->
         <div class="mb-3">
             <label for="hobi" class="form-label">Hobi atau Kegemaran</label>
-            <input type="text" class="form-control" id="hobi">
+            <select class="form-select js-example-basic-multiple" aria-label="Default select example" multiple="multiple">
+                <option value="1">Islam</option>
+                <option value="2">Kristen Protestan</option>
+                <option value="3">Katholik</option>
+                <option value="4">Hindu</option>
+                <option value="5">Budha</option>
+                <option value="6">Konghuchu</option>
+                <option value="7">Kepercayaan Kepada Tuhan YME</option>
+            </select>
             <div id="hobiHelp" class="form-text">Hobi/Kegemaran Peserta didik</div>
         </div>
         <div class="mb-3">
@@ -202,4 +215,11 @@
     </form>
 </div>
 <!--ini form-->
+<?= $this->endSection() ?>
+<?= $this->section('js') ?>
+<script>
+    $(document).ready(function() {
+        $('.js-example-basic-multiple').select2();
+    });
+</script>
 <?= $this->endSection() ?>
