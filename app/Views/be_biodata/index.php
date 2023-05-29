@@ -46,7 +46,7 @@
         </div>
         <div class=" mb-3">
             <label for="tempat_lahir" class="form-label">Tempat Lahir</label>
-            <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" placeholder="Yogyakarta">
+            <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" value="<?=@$siswa['tempat_lahir']?>" placeholder="Yogyakarta">
             <div id="tempat_lahirHelp" class="form-text">Tempat Lahir Peserta Didik sesuai dokumen resmi yang berlaku akte atau ijazah</div>
         </div>
         <div class="mb-3">
