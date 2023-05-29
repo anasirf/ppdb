@@ -19,7 +19,7 @@
         </div>
         <div class="mb-3">
             <label for="nisn" class="form-label">NISN</label>
-            <input type="text" class="form-control" id="nisn" name="nisn"  value="<?=@$siswa['nama']?>" placeholder="Nomor Induk Siswa Nasional">
+            <input type="text" class="form-control" id="nisn" name="nisn"  value="<?=@$siswa['nisn']?>" placeholder="Nomor Induk Siswa Nasional">
         </div>
         <div class="mb-3">
             <label for="jk" class="form-label">Jenis Kelamin</label>
@@ -37,7 +37,7 @@
 
         <div class="mb-3">
             <label for="nik" class="form-label">NIK/No. KITAS (Untuk WNA)</label>
-            <input type="text" class="form-control" id="nik" name="nik" aria-describedby="nikHelp" placeholder="Nomor Induk Kependudukan">
+            <input type="text" class="form-control" id="nik" name="nik"  value="<?=@$siswa['nik']?>" aria-describedby="nikHelp" placeholder="Nomor Induk Kependudukan">
             <div id="nikHelp" class="form-text">Nomor Induk Kependudukan yang tercantum pada KK / KTP /KIA bagi WNA diisi menggunakan nomor Kartu Izin Tinggal Terbatas (KITAS).</div>
         </div>
         <div class="mb-3">
