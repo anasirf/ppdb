@@ -23,6 +23,12 @@
     </a>
 </li>
 <li class="nav-item">
+    <a class="nav-link" href="<?= base_url("/be_saudara") ?>">
+        <span data-feather="user" class="align-text-bottom"></span>
+        Data Saudara
+    </a>
+</li>
+<li class="nav-item">
     <a class="nav-link" href="<?= base_url("/be_data_pendukung") ?>">
         <span data-feather="user" class="align-text-bottom"></span>
         Data Pendukung

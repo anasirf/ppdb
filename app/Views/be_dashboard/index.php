@@ -2,7 +2,7 @@
 <?= $this->section('content') ?>
 <link href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css" rel="stylesheet">
 
-<table id="example" class="display" style="width:100%">
+<!-- <table id="example" class="display" style="width:100%">
     <thead>
         <tr>
             <th>Nama</th>
@@ -23,5 +23,5 @@
         endforeach;
         ?>
     </tbody>
-</table>
+</table> -->
 <?= $this->endSection() ?>

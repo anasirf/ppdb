@@ -65,6 +65,10 @@
             <input type="text" class="form-control" id="instansi" name="instansi" placeholder="Nama Instansi">
         </div>
         <div class="mb-3">
+            <label for="instansi" class="form-label">Alamat Instansi</label>
+            <input type="text" class="form-control" id="t_instansi" name="t_instansi" placeholder="Alamat Instansi"> <!--belum ada dbnya-->
+        </div>
+        <div class="mb-3">
             <label for="gaji" class="form-label">Penghasilan</label>
             <input type="text" class="form-control" id="gaji" name="gaji" placeholder="Rp. 5.0000.0000">
         </div>
