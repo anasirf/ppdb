@@ -31,6 +31,10 @@ class Be_biodata extends BaseController
         $jk = $this->request->getVar('jk');
         $nik = $this->request->getVar('nik');
         $nokk = $this->request->getVar('nokk');
+        $tempat_lahir = $this->request->getVar('tempat_lahir');
+        $no_akta = $this->request->getVar('no_akta');
+        $k_khusus = $this->request->getVar('k_khusus');
+        $alamat_tinggal = $this->request->getVar('alamat_tinggal');
 
 
 
@@ -53,6 +57,10 @@ class Be_biodata extends BaseController
             'jk' => $jk,
             'nik' => $nik,
             'nokk' => $nokk,
+            'tempat_lahir' => $tempat_lahir,
+            'no_akta' => $no_akta,
+            'k_khusus' => $k_khusus,
+            'alamat_tinggal' => $alamat_tinggal,
         ];
         $Msiswa->save($data); //esekusi database
 

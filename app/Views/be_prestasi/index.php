@@ -12,7 +12,7 @@
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                <label for="bb" class="form-label">Jenjang Prestasi </label>
+                <label for="bb" class="form-label">Jenjang </label>
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
@@ -20,108 +20,122 @@
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
-        <div class="row"><div class="col-12"><br></div></div>
+        <div class="row">
+            <div class="col-12"><br></div>
+        </div>
         <div class="row">
             <div class="col-6">
 
                 <input type="text" class="form-control" id="prestasi" name="prestasi" placeholder="Juara 1 Lomba">
             </div>
             <div class="col-2">
-                
+
                 <input type="text" class="form-control" id="jenjang" name="jenjang" placeholder="SD">
             </div>
             <div class="col-4">
-                
+
                 <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Kelurahan">
             </div>
         </div>
